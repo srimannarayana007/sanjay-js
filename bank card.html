@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="checkout-form">
+        <h2>Checkout Form</h2>
+        <div class="container">
+            <form>
+                <div class="billing">
+                    <h3>Billing Address</h3>
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Faraz" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="codewithfaraz@example.com" required>
+                    
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder="Mira Bhayandar Road" required>
+                    
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="Mumbai" required>
+                    
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="MH" required>
+                        </div>
+                        <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder="400001" required>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                </div>
+
+                <div class="payment">
+                    <h3>Payment</h3>
+                    <label for="cards">Accepted Cards</label>
+                    <div class="icon-container">
+                        <i class="fa fa-cc-visa"></i>
+                        <i class="fa fa-cc-amex"></i>
+                        <i class="fa fa-cc-mastercard"></i>
+                        <i class="fa fa-cc-discover"></i>
+                    </div>
+                    
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="Faraz" required>
+                    
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required>
+                    
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="December" required>
+                    
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="expyear">Exp Year</label>
+                            <input type="text" id="expyear" name="expyear" placeholder="2027" required>
+                        </div>
+                        <div class="col-50">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                </div>
+
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+        <div class="cart">
+            <h3>Cart <span class="price"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h3>
+            <p><a href="#">Item 1</a> <span class="price">$105</span></p>
+            <p><a href="#">Item 2</a> <span class="price">$95</span></p>
+            <p><a href="#">Item 3</a> <span class="price">$100</span></p>
+            <p><a href="#">Item 4</a> <span class="price">$50</span></p>
+            <hr>
+            <p>Total <span class="price"><b>$350</b></span></p>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background: #f2f2f2;
+}
+
+.checkout-form {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    flex: 0 0 65%;
+    padding-right: 20px;
+}
+
+.cart {
+    flex: 0 0 30%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.col-50 {
+    flex: 0 0 50%;
+    padding-right: 10px;
+}
+
+.cart h3 {
+    font-size: 24px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.cart p {
+    margin: 10px 0;
+}
+
+.price {
+    float: right;
+    color: grey;
+}
+
+.cart p a {
+    text-decoration: none;
+    color: #000;
+}
+
+.cart hr {
+    border: 1px solid #eee;
+}
+
+.cart span.price {
+    color: black;
+}
+

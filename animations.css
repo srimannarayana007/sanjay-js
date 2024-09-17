@@ -1,0 +1,111 @@
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen background */
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+    z-index: -1; /* Places the background behind content */
+}
+
+/* Animation keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    z-index: 1; /* Keeps content above background */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen background */
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('my\ thar.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    animation: backgroundAnimation 20s infinite linear;
+    z-index: -1; /* Places the background behind content */
+}
+
+/* Animation keyframes for a simple pan effect */
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Content styling */
+.content {
+    position: relative;
+    color: rgb(231, 92, 92);
+    text-align: center;
+    padding: 50px;
+    z-index: 1; /* Keeps content above background */
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.5em;
+}

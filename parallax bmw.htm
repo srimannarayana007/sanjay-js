@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Website with Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">contact:7396484888</a></li>
+        <li><a href="#mail"> Gmail:sanjaysrimannarayana@gmail.com</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h1>BMW 7 Series, i7 launched in India—same flavour, different tastes
+
+      https://yourstory.com/automotive/2023-bmw-7-series-i7-luxury-sedans-launched-india</h1>
+
+      <p>.2023 BMW 7 Series, i7 Electric  Launch Price Rs 1.7 Cr, Rs 1.95 Cr.
+
+      Copyright (C) 'RUSH LANE' Read more at... 
+      https://www.rushlane.com/2023-bmw-7-series-i7-electric-launch-price-rs-1-7-cr-rs-1-95-cr
+      -12457011.html </p>
+      <div class="parallax-container">
+        <div class="parallax-image" style="background-image: url('image1.jpg');"></div>
+        <img src="c:\Users\dell\Downloads\bmw9.jpg" alt="image1">
+      </div>
+    </section>
+    <section id="about">
+      <h1>About Us</h1>
+      <p>BMW has launched the new generation of the 7 Series sedan in India at a
+         whopping price of Rs 1.70 crore (ex-showroom). The German marque has also 
+         introduced an all-electric version of the flagship limousine in the country—the i7
+         with a sticker price of Rs 1.95 crore (ex-showroom). Offered in a single, fully-loaded
+         740i variant, the new 7 Series is now available as a petrol-powered limousine only.
+         Its all-electric sibling is also offered in a single i7 xDrive 60 trim
+        .Deliveries of both these models, which made their global debut in April last year
+         are expected to commence from March 2023 onwards.
+
+        Read more at: https://yourstory.com/automotive/2023-bmw-7-series-i7-luxury-sedans-launched-india.</p>
+      <div class="parallax-container">
+        <div class="parallax-image" style="background-image: url('image2.jpg');"></div>
+        <img src="c:\Users\dell\Downloads\bmw2.jpg" alt="image2">
+      </div>
+    </section>
+    <section id="contact">
+      <h1>Get in Touch</h1>
+      <p>https://yourstory.com/automotive/2023-bmw-7-series-i7-luxury-sedans-launched-india</p>
+      <div class="parallax-container">
+        <div class="parallax-image" style="background-image: url('image3.jpg');"></div>
+        <img src="c:\Users\dell\Downloads\bmw10.jpg" alt="image3">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <p>FOR MORE INFORMATION FOLLOW ON INSTAGRAM, YOUTUBE, Twitter.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p>Address: 1-2-90/2 hyderabad (telangana)</p>
+        <p>Phone: 7396484888</p>
+        <p>Email: <a href="mailto:info@example.com">sanjaysrimannarayana@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #131313;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+  }
+  
+  header {
+    grid-row: 1;
+    background-color: #050505;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  main {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 2em;
+  }
+  
+  section {
+    background-color: #8fa9b3;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(222, 210, 210, 0.1);
+  }
+  
+  h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .parallax-container {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .parallax-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: translateZ(0);
+    transition: transform 0.2s ease;
+  }
+  .parallax-image:hover {
+    transform: scale(1.1);
+  }
+  footer {
+    background-color: #668fb6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: 25%;
+    margin: 20px;
+  }
+  
+  .footer-column h4 {
+    margin-top: 0;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 10px;
+  }
+  
+  .social-link {
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  .social-link:hover {
+    color: #333;
+  }
+  
+  .social-link i {
+    font-size: 20px;
+    margin-right: 10px;
+  }

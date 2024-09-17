@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parallax Scrolling Website</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="parallax-container">
+		<div class="parallax-layer" id="layer1">
+			<h1>Welcome to our website! Apple 15 PRO MAX</h1>
+            <p> contact-info:mail id:> sanjaysrimannarayana@gmail.com</p>
+            <p>  call: 7396484888 </p>
+		</div>
+		<div class="parallax-layer" id="layer2">
+			<img src="c:\Users\dell\Downloads\i9.jpg" alt="Image 1">
+		</div>
+		<div class="parallax-layer" id="layer3">
+			<p>.      15PRO MAX WITH 128GB     .</p>
+		</div>
+		<div class="parallax-layer" id="layer4">
+			<img src="c:\Users\dell\Downloads\i2.jpg" alt="Image 2">
+		</div>
+		<div class="parallax-layer" id="layer5">
+			<h2>get in touch with us !</h2>
+			<p>Contact us at <a href="mailto:info@example.com">sanjaysrimannarayana@gmail.com</a></p>
+		</div>
+        <div class="parallax-layer" id="layer6">
+            <img src="c:\Users\dell\Downloads\Apple_iPhone_15_and_15_Plus.jpg" alt="image 3">
+        </div>
+        <div class="parallax-layer" id="layer7">
+            <h3> Get in touch with us! </h3>
+        </div>
+        <div class="parallax-layer" id="layer8">
+            <img src="c:\Users\dell\Downloads\i 15promax.jpg" alt="image 4">
+        </div>
+    </body>
+</body>
+</html>
+<style>
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.parallax-layer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(0);
+}
+
+.parallax-layer img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+ 
+/* Parallax effect */
+.parallax-layer#layer1 {
+  background-color: #e46b92;
+  transform: translateZ(-0px);
+}
+
+.parallax-layer#layer2 {
+  background-image: url('image1.jpg');
+  transform: translateZ(-0px);
+}
+
+.parallax-layer#layer3 {
+  background-color: #7ea2d4;
+  transform: translateZ(-1px);
+}
+
+.parallax-layer#layer4 {
+  background-image: url('image2.jpg');
+  transform: translateZ(-0px);
+}
+
+.parallax-layer#layer5 {
+  background-color: #dacfcf;
+  transform: translateZ(-1px);
+}
+.parallax-layer#layer6 {
+    background-image: ur1('image3.jpg');
+    transform:translatez(-0px);
+}   
+.parallax-layer#layer7 {
+    background-color: #100a0a;
+    transform: translateZ(-1px);
+}
+.parallax-layer#layer8 {
+    background-image: ur1('image4.jpg');
+    transform: translatez(-0px);
+}
+
+/* Scroll effect */
+.parallax-container::-webkit-scrollbar {
+  display: none;
+}
+
+.parallax-container {
+  -webkit-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+}
+
+.parallax-layer {
+  -webkit-scroll-snap-align: center;
+  scroll-snap-align: center;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .parallax-container {
+    height: auto;
+  }
+  .parallax-layer {
+    height: auto;
+  }
+}

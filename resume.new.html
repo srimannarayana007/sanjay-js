@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #050404;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: #80abc6;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 800px;
+  max-width: 90%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.card-header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 200%;
+  margin-right: 15px;
+}
+
+.card-body {
+  display: flex;
+}
+
+.card-left {
+  width: 30%;
+  padding-right: 20px;
+  border-right: 1px solid #0b0a0a;
+}
+
+.card-right {
+  width: 70%;
+}
+
+.card-left .section {
+  margin-bottom: 30px;
+}
+
+.card-left .section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-left .section p {
+  margin: 0;
+  color: #5112e2;
+}
+
+.card-left .section input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ce1818;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.card-right .section {
+  margin-bottom: 20px;
+}
+
+.card-right .section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-right .section .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-right .section .item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.card-right .section .item img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card-footer a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.card-footer img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      
+    <a href="#">
+        <img src="c:\Users\dell\Downloads\sanjay.jpg" alt="profile">
+    </a>
+    </div>
+    <div class="card-body">
+      <div class="card-left">
+        <div class="section">
+          <h2>SANJAY</h2>
+          <p>FRONTEND DEVELOPER</p>
+        </div>
+        <div class="section">
+          <h2>EMAIL</h2>
+          <input type="text" placeholder="sanjaysrimannarayana@gmail.com" />
+        </div>
+        <div class="section">
+          <h2>PHONE NUMBER</h2>
+          <input type="text" placeholder="7396484888" />
+        </div>
+        <div class="section">
+          <h2>ADDRESS</h2>
+          <input type="text" placeholder="bapatla.guntur(d)" />
+        </div>
+        <div class="card-footer">
+          <a href="#">
+            <img src="c:\Users\dell\Downloads\globe.jpg" alt="Globe icon" />
+          </a>
+          <a href="#">
+            <img src="c:\Users\dell\Downloads\linkedin.jpg" alt="LinkedIn icon" />
+          </a>
+          <a href="#">
+            <img src="c:\Users\dell\Downloads\twitter.jpg" alt="Twitter icon" /> 
+          </a>
+        </div>
+      </div>
+      <div class="card-right">
+        <div class="section">
+          <P>MASTER'S: MSC international management in" TEESSIDE UNIVERSITY " (london.uk) .</p>
+          <p>WORKING: "INNOVATORS TECH SOLUTIONS" as frontend developer .</p>
+          <a href="#">
+          <img src="c:\Users\dell\Downloads\innvators.tech.solution.jpg" alt="company icon" />
+          </a>
+        </div>
+        <div class="section">
+          <h2>Professional Skills</h2>
+          <div class="item">
+            <img src="c:\Users\dell\Downloads\self-motivation.jpg" alt="Edit icon" />
+            <input type="text" placeholder="SELF-MOTIVATION." />
+          </div>
+          <div class="item">
+            <img src="c:\Users\dell\Downloads\marketing.jpg" alt="Edit icon" />
+            <input type="text" placeholder="MARKETING." />
+          </div>
+          <div class="item">
+            <img src="c:\Users\dell\Downloads\presentation.jpg" alt="Edit icon" />
+            <input type="text" placeholder="PRESENTATION." />
+          </div>
+          <div class="item">
+            <img src="c:\Users\dell\Downloads\technical skills.jpg" alt="Edit icon" />
+            <input type="text" placeholder="TECHNICAL SKILLS." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
